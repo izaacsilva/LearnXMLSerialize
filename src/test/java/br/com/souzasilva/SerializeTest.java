@@ -48,5 +48,6 @@ class SerializeTest {
         XmlMapper xmlMapper = new XmlMapper();
         kml value = xmlMapper.readValue(file, kml.class);
         assertEquals("Ferrovias", value.getFolder().getName());
+        System.out.println(value);
     }
 }
